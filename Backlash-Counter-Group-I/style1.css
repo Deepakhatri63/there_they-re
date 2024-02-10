@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:wght@300&family=Unna&display=swap");
+
+/* .img {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  margin-top: 35rem;
+}
+
+.imagee {
+  position: absolute;
+  margin-top: 42.7rem;
+  width: 100%;
+  z-index: 2;
+} */
+
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 89%;
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.navbar {
+  z-index: 12;
+  position: relative;
+}
+
+.blackbg {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 14rem;
+  top: 0;
+}
+
+.heading {
+  position: absolute;
+  top: 100px; /* Adjust as needed */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  color: white;
+  text-align: center;
+  margin-top: 25rem;
+  font-size: 6rem;
+  z-index: 1; /* Ensure heading is above images */
+}
+
+.heading h1 {
+  display: inline;
+  font-weight: 100;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 5.25rem;
+}
+
+.img {
+  width: 100%; /* Adjust as needed */
+  display: block;
+  object-fit: cover;
+  /* height: 90vh; */
+  z-index: -1; /* Ensure background image is below heading */
+}
+
+.image {
+  width: 100%; /* Adjust as needed */
+  display: block;
+  object-fit: cover;
+  margin-top: -18.5rem;
+}
+
+.content2 {
+  display: flex;
+  gap: 16rem;
+  margin-right: 8rem;
+}
+
+.i {
+  width: 40rem;
+  height: 55rem;
+  border-radius: 20rem;
+  margin-left: 8%;
+  margin-top: 15rem;
+  object-fit: cover;
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); 
+  pointer-events: none; 
+} */
+
+.content-right {
+  font-size: 1.7rem;
+  margin-top: 13rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-right h1 {
+  font-weight: 100;
+}
+
+.heading3 h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  width: 40%;
+  margin-left: 3rem;
+}
+
+.heading3-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 3rem;
+  width: 30%;
+}
+
+.overlay {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .heading {
+    font-size: 2rem;
+    margin-top: 8rem;
+  }
+
+  &::before {
+    margin-top: 5rem;
+    height: 62%;
+  }
+
+  .image {
+    margin-top: 0;
+  }
+
+  .img {
+    height: 60vh;
+  }
+
+  .middle {
+    margin-top: -4rem;
+  }
+
+  .content2 {
+    display: block;
+  }
+
+  .i {
+    width: 26rem;
+    height: 10rem;
+    margin-top: 2rem;
+  }
+
+  .overlay {
+    font-size: 2.6rem;
+    display: flex;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -10.2rem;
+    margin-left: 7.9%;
+    position: absolute;
+    width: 26rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+  }
+
+  .content2 {
+    margin-right: 0;
+  }
+
+  .content-right {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+  }
+
+  .heading3 h1 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    font-weight: 800;
+    margin-left: 2rem;
+    width: 90%;
+  }
+
+  .heading3-content h2 {
+    margin-left: 2rem;
+    width: 90%;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+  }
+
+  .heading3-content {
+    margin-bottom: 10rem;
+  }
+}

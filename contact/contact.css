@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.last-heading {
+  font-size: 2.5rem;
+  margin-top: 18rem;
+  margin-left: 12%;
+  margin-right: 60%;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+}
+
+.last-heading-nomargin {
+  font-size: 2.5rem;
+  margin-left: 12%;
+  margin-right: 60%;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+}
+
+.last-heading-small {
+  font-size: 1rem;
+  margin-left: 12%;
+  margin-right: 60%;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  margin-bottom: 8rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .last-heading {
+    font-size: 1.8rem;
+    margin-left: 6%;
+    margin-right: 7%;
+    margin-top: 5rem;
+  }
+
+  .last-heading-nomargin {
+    font-size: 1.8rem;
+    margin-left: 6%;
+    margin-right: 7%;
+  }
+
+  .last-heading-small {
+    font-size: 1rem;
+    margin-left: 6%;
+    margin-right: 7%;
+  }
+}

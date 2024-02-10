@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+.head {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-top: 6%;
+  font-size: 5.5em;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  margin-bottom: 1rem;
+
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.flexnav {
+  width: 55%;
+  margin-left: 45%;
+  /* position: absolute; */
+  /* background-color: aqua; */
+  /* display: flex; */
+}
+
+.middle {
+  /* text-align: center; */
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.button {
+  text-align: right;
+  /* margin-top: rem; */
+  margin-right: 4rem;
+  margin-top: -2.8rem;
+}
+
+.head1 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  /* margin-top: 20%; */
+  font-size: 4.5em;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.links {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.first {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 4rem;
+}
+
+.first a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.first a:hover,
+.first a:visited:hover {
+  color: inherit; /* Use the color from the parent element for hover and visited hover */
+}
+
+.second a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.second a:hover,
+.second a:visited:hover {
+  color: inherit; /* Use the color from the parent element for hover and visited hover */
+}
+
+.flex {
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.flex h4 {
+  margin: 0;
+}
+
+.last {
+  margin: 0;
+  margin-left: 4rem;
+}
+
+.middle h1 {
+  color: #fff;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+/* .flexnav{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 18%;
+    justify-content: space-between;
+  } */
+
+.button h3 {
+  color: #fff;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 100;
+}
+
+.flexcontainer {
+  display: flex;
+}
+
+label {
+  display: none;
+}
+
+/* .overlay {
+    position: relative;
+    width: 59rem;
+    height: 28rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 2rem;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s ease-out forwards; 
+  } */
+
+/* Backlash Counter Installation */
+
+.middle a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.middle a:hover,
+.middle a:visited:hover {
+  color: inherit; /* Use the color from the parent element for hover and visited hover */
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 0.13em;
+}
+
+.links,
+.flexnav,
+.heading,
+.text {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* medium screens */
+@media only screen and (max-width: 1350px) {
+  .head {
+    font-size: 4em;
+    margin-top: 8%;
+  }
+
+  .head1 {
+    font-size: 3.5em;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  .flex h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .first,
+  .flex,
+  .last {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+  .head {
+    margin-top: 35%;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .head {
+    font-size: 3rem;
+    margin-top: 40%;
+  }
+
+  .head1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .middle {
+    text-align: left;
+    top: 0;
+    margin-left: 1rem;
+    margin-top: 2.4rem;
+  }
+
+  label {
+    display: block;
+  }
+
+  .slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #000000e2;
+    transition: 0.5s ease;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+    z-index: 3;
+    top: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5rem;
+  }
+
+  ul li {
+    list-style: none;
+    text-align: center;
+  }
+
+  ul li a {
+    color: rgb(233, 233, 233);
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+  }
+
+  input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+  }
+
+  .toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 2.5rem;
+    left: 85%;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.3 ease;
+  }
+
+  .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    height: 2.2px;
+    transform: translate(-50%, -50%);
+  }
+
+  .toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+
+  input:checked ~ .toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  input:checked ~ .slide {
+    transform: translateX(0);
+  }
+
+  /* input:checked ~ .toggle .common{
+      background-color: black;
+    } */
+
+  .links {
+    display: none;
+  }
+
+  .flexnav {
+    /* background-color: aqua; */
+    margin-left: 5%;
+    margin-top: 0.6rem;
+  }
+
+  .button {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:wght@300&family=Unna&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond&display=swap");
+
+body {
+  background-image: url("/assests/computer.jpg");
+  background-repeat: repeat;
+}
+
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1; /* Increase z-index to position the overlay above the background image */
+}
+
+.heading3 {
+  position: relative; /* Ensure the element is positioned relative to adjust z-index */
+  z-index: 1; /* Set z-index higher than the overlay */
+  color: white;
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 2.6rem;
+  font-family: "EB Garamond", serif;
+}
+
+.heading3 h1{
+  font-weight: 100;
+
+}
+
+.small {
+  font-size: 4rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: left;
+  font-weight: 100;
+  font-family: "EB Garamond", serif;
+}
+
+.small1 {
+  font-size: 3.2rem;
+  /* margin-left: 12%; */
+  margin-right: 14%;
+  text-align: left;
+  font-weight: 100;
+  font-family: "EB Garamond", serif;
+}
+
+.more-small {
+  font-size: 3rem;
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: left;
+  font-weight: 100;
+  font-family: "EB Garamond", serif;
+}
+
+.heading4 {
+  position: relative; /* Ensure the element is positioned relative to adjust z-index */
+  z-index: 1; /* Set z-index higher than the overlay */
+  color: white;
+  margin-left: 12%;
+  margin-top: 15rem;
+  font-size: 2.2rem;
+  font-family: "EB Garamond", serif;
+}
+
+.heading4 h1{
+  font-weight: 100;
+
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .heading3 {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+  }
+
+  .small {
+    font-size: 2.5rem;
+    margin-left: 6%;
+    margin-right: 8%;
+  }
+
+  .more-small {
+    font-size: 2rem;
+    margin-left: 6%;
+    margin-right: 8%;
+  }
+
+  .heading4 {
+    font-size: 1.4rem;
+    margin-left: 6%;
+  }
+
+  .small1 {
+    /* margin-left: 6%; */
+    font-size: 2rem;
+  }
+
+  &::before {
+    height: 420%;
+  }
+}
